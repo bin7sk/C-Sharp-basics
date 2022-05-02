@@ -13,7 +13,7 @@ namespace project
             Console.WriteLine("d = " + d);
             r = 25;
             r.PrintNumber();
-
+            TypesConversion.Conversion();
 
         }
     }
