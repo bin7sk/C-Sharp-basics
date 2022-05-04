@@ -12,7 +12,17 @@ namespace OOP
         static void Main(string[] args)
         {
             Console.WriteLine("Main() starts here:");
-            
+            ConstVSReadOnly cvro = new ConstVSReadOnly(2022);
+            Console.WriteLine("const from class: " + ConstVSReadOnly.pi);
+            Console.WriteLine($"readonly = {cvro.number}");
+
+            // Overloading ToString()
+            Employee e = new Employee();
+            e.FirstName = "Bob";
+            e.LastName = "Diew";
+            Console.WriteLine(e.ToString());
+
+
         }
     }
     static class MyEasyClass
@@ -26,4 +36,27 @@ namespace OOP
         }
     }
 
+    class ConstVSReadOnly
+    {
+        public const double pi = 3.14;
+
+        public readonly uint number;
+
+        public ConstVSReadOnly(uint _number)
+        { 
+            number = _number;
+        }
+
+    }
+
+    class Employee
+    { 
+        public string FirstName;
+        public string LastName;
+
+        public override string ToString()
+        {
+            return FirstName + ", " + LastName;
+        }
+    }
 }
