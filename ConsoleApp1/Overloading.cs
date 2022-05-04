@@ -15,6 +15,26 @@ namespace project
             r.PrintNumber();
             TypesConversion.Conversion();
 
+            // value vs reference
+
+            cACC refer = new cACC() 
+            { 
+                name = "class",
+                number = 11
+            };
+            sACC value = new sACC()
+            { 
+                name = "struct",
+                number = 77
+            };
+            
+            cACC refer2 = refer;
+            refer2.name = "refer2";
+            Console.WriteLine(refer.name);
+
+            sACC value2 = value;
+            value2.name = "value2";
+            Console.WriteLine(value.name);
         }
     }
 
