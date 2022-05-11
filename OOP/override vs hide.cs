@@ -25,4 +25,13 @@
 
     }
 
+    partial class devided
+    { 
+        string name;
+        public void print_nothing()
+        { 
+            Console.Write("");
+        }
+
+    }
 }

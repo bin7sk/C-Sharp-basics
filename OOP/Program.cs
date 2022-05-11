@@ -126,4 +126,12 @@
 
 
     }
+    partial class devided
+    { 
+        int y;
+        public void print_newline()
+        { 
+            Console.WriteLine();
+        }
+    }
 }
