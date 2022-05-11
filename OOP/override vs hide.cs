@@ -32,6 +32,9 @@
         { 
             Console.Write("");
         }
-
+        public partial void part_of_method()
+        { 
+            Console.WriteLine("Partial");
+        }
     }
 }

@@ -129,9 +129,12 @@
     partial class devided
     { 
         int y;
+        public partial void part_of_method();
+
         public void print_newline()
         { 
             Console.WriteLine();
         }
+
     }
 }
