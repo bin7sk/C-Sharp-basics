@@ -14,6 +14,7 @@
 
     class SubClass : BaseClass
     { 
+        public string what = "subclass";
         public override void virt_method()
         { 
             Console.WriteLine("overrided method");

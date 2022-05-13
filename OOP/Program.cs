@@ -47,6 +47,7 @@
             SubClass sub = new SubClass();
             sub.virt_method();
             sub.hidable();
+            sub.extended();
 
 
         }
